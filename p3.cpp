@@ -1,8 +1,16 @@
-void swap(int &a, int &b) {
-    int t = a;
-    a = b;
-    b = t;
-}
+// Count even numbers in an array
+#include <iostream>
+using namespace std;
 
-// Calling:
-swap(x, y);
+int main() {
+    int a[5] = {2, 5, 8, 7, 10};
+    int count = 0;
+
+    for (int i = 0; i < 5; i++) {
+        if (a[i] % 2 == 0)
+            count++;
+    }
+
+    cout << count;
+    return 0;
+}
